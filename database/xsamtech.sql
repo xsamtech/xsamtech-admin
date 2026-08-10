@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS `categories` (
   `image_url` TEXT NULL,
   `icon` VARCHAR(45) NULL,
   `color` VARCHAR(45) NULL,
+  `is_for_service` TINYINT(1) NOT NULL DEFAULT 0 COMMENT '(0) is for products. (1) is for services. (3) is for something else.',
   `group` ENUM('software', 'hardware', 'electronic_device', 'electricity_accessories', 'computer_accessories') NULL,
   `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
