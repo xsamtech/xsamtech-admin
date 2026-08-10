@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS `categories` (
   `image_url` TEXT NULL,
   `icon` VARCHAR(45) NULL,
   `color` VARCHAR(45) NULL,
+  `group` ENUM('software', 'hardware', 'electronic_device', 'electricity_accessories', 'computer_accessories') NULL,
   `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `deleted_at` TIMESTAMP NULL,
